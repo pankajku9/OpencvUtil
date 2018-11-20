@@ -185,7 +185,7 @@ int OpencvUtil::convertMatFromBmpFmt(cv::Mat& imgMat, uint32_t* data) {
     return 0;
 }
 
-#if 1
+#ifndef  LIB_MODE
 int main(int argc, char** argv)
 {
 	char* imageName = argv[1];
